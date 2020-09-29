@@ -30,11 +30,15 @@ body{
     z-index: -1;
     margin-left: -10px;
     margin-top: -10px;
+    max-width: 100%;
 } 
 
 .top ul{
     list-style: none;
     background-color: none;
+}
+.top {
+    max-width: 100%;
 }
 
 /* About Me */
@@ -77,55 +81,6 @@ body{
     background-color: grey;
 }
 
-/* Proejcts Sections */
-/*
-.website{
-    grid-area: web;
-    background-color: #404c3f;
-    color: white;
-}
-.four-ong {
-    grid-area: four;
-    text-align: center;
-    background-color: #7a8479;
-    color: white;
-}
-.more_to_come{
-    grid-area: more;
-    text-align: right;
-    background-color: #70776f;
-    color: white;
-}
-#title{
-    grid-area: title;
-    margin: 0px;
-    padding: 0px;
-    font-size: 40px;
-    text-align: center;
-    background-color: #404c3f;
-    color: white;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-}
-
-.projects{
-    display: grid;
-    grid-template-rows: 50px 100px 100px 100px;
-    grid-template-areas: "title"
-                         "web"
-                         "four"
-                         "more";
-}
-.website p, .website h2{
-    margin-left: 30px;
-}
-.more_to_come p, .more_to_come h2{
-    margin-right: 30px;
-}
-
-.website:active {
-    background-color: yellow;
-}  */
 th, tr, table {
     border-bottom: 1px solid black;
     border-collapse: collapse;
@@ -154,8 +109,8 @@ td{
     border-bottom: 0px solid black;
 }
 .project h2{
-    margin-left: 28%;
-    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
 }
 
 
@@ -214,6 +169,22 @@ td{
 }
 #email{
     font-size: 100%;
+}
+
+@media only screen and (max-width: 990px){
+    .about_me p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    
+}
+
+@media only screen and (max-width: 760px){
+    .about_me h2{
+        font-size: 24px;
+    }
 }
 
 
