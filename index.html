@@ -1,92 +1,110 @@
 <!DOCTYPE html>
 <html lang = "en">
-    
     <head>
         <meta charset = "utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="js/splide-2.4.12/dist/css/themes/splide-default.min.css">
         <title>Nathan Radin</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="js/myscript.js"></script>
     </head>
-    
-    <body>
-        <!-- Section with main photo and the navigation system to different sections
-             of the page -->
-        <section class = "wrapper_col">
-            <section class = "top">
-            
-                <img id = "pic" src = "media/website_picture.png">
 
-            </section>
-        </section>
-        
-        <!-- Three squares in a single row the breifly describe me. -->
-        <section class  = "about_me">
-            <article class = "family_man">
-                <h2>Family Man</h2>
-                <p>Once attending college, I learned the importance of having strong family relationships. My family means the world to me, and I wouldn't be where I am today with the love and support from them.</p>
-            </article>
-            <article class = "programmer">
-                <h2>Programmer</h2>
-                <p>My passion of programming started in my senior year of high school, and I have been happily engulfed in this field since. From creating video games, to websites, databases, I enjoy all the aspects of the programming field.</p>
-            </article>
-            <article class = "LL_student">
-                <h2>Life-Long Student</h2>
-                <p>Throughout my college experience, I have learned that I thrive when I am learning. Whether it is technology related or a completely off-subject field, I find that I am my happiest when trying to learn new things.</p>
-            </article>
-        </section>
-        
-        <section class = "project">
-            <h2>Projects</h2>
-            <div class = "table">
-                <table>
-                    <tr>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Language</th>
-                    </tr>
-                    <tr>
-                        <td>4ong: Multiplayer Pong</td>
-                        <td id = "mid">Four-player online-pong game, created by myself and two others</td>
-                        <td>Java</td>
-                    </tr>
-                    <tr>
-                        <td>Professional Website</td>
-                        <td id = "mid">This website showing off web/mobile development skills</td>
-                        <td>HTML-CSS-JS</td>
-                    </tr>
-                    <tr id = "bottom">
-                        <td>More to come</td>
-                        <td id = "mid">...</td>
-                        <td>...</td>
-                    </tr>
-                </table>
+    <body>
+        <div class="header" id = "header">
+            <h1 class="title web">Web</h1>
+            <h1 class="title developer">Devel<span id = "letter">o</span>per</h1>
+            <p class="desc">Hey, I'm Nathan Radin. I am a college student looking for internships in web development, database management, and mobile development.</p>
+        </div>
+
+        <section id = "section">
+            <div class="container">
+                <div class="content">
+                    <h3 class="head">Who Am <span id = "letter">I</span>?</h3>
+                    <p class="aboutText">Originally from southern New Hampshire, but I am currently studying in western New York at Rochester Institute of Technology. Outside of programming, I enjoy to be engulfed in professional hockey, play and study online chess, and listen to all different types of music. </p>
+                </div>
+                <div class="contentImg">
+                    <img id = "rotating" src = "assets/white.png" alt = "white">
+                </div>
             </div>
         </section>
-        
-        <!-- Paragraph on what I want to do with my life -->
-        <section  class = "future">
-            <h2>Future Plans</h2>
-            <p>Regarding my plans for the rest of college and into the real world, I plan on applying for internship opportunities to help me get my foot in the door for future options. The areas that I want to go into are web/mobile programming, database programming, or becoming a full-stack developer at some point. I have other interests that I have as well, such as digital art, to travel the world, entertainment and many small hobbies that I would like to do one day in the future.</p>
-        </section>
-        
-        <!-- Contact info with two columns showing things to contact me -->
-        <section class = "contact_info">
-            <h2>Get Connected</h2>
-            <p>All pieces of contact information are for business inquiries only</p>
-            <p id = >Email: nmr5651@rit.edu</p>
-            <!-- Want to use the images for each contact info. Ex: Twitter, Snapchat, LinkedIn, etc.. -->
-            <!-- <img  id = "logo" src = "Media/Logos/email-13-512.png"> -->
-            <a href = "https://www.facebook.com/nathan.radin"><img  id = "logo" src = "media/Logos/facebook-3-512.png"></a>
-            <a href = "https://www.linkedin.com/in/nathan-radin-5a6b11191/"><img  id = "logo" src = "media/Logos/linkedin-3-512.png"></a>
-            <a href = "https://twitter.com/RadinNate"><img  id = "logo" src = "media/Logos/twitter-3-512.png"></a>
-            <a href = "https://www.snapchat.com/add/nathanradin"><img  id = "logo" src = "media/Logos/snapchat-512.png"></a>
-        </section>
-        
-        <!-- Copyright and other needed things for a website -->
-        <footer>
-        </footer>
-        
-        
-    </body>
 
+        <h2 id = "projects">Proj<span id = "letter">e</span>cts</h2>
+
+        <div class="outer">
+        <div class="splideContainer">
+            <div class="splide">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="con">
+                                <div class="left">
+                                    <img src = "assets/upslogo.png" alt = "upslogo">
+                                    <p>Languages used: React, JSON, CSS</p>
+                                </div>
+                                <div class="right">
+                                    <h2>UPS Sorting</h2>
+                                    <p id = "projectDesc">Developed this website when working a part-time job at a UPS facility. I noticed a problem with the sorting position, and decided to make a website to help employees memorize labels and practice their reaction time.</p>
+                                    <br><br>
+                                    <a href = "https://ups-sorts.herokuapp.com/"><p>Link to Website(might take some time to load)</p></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="con">
+                                <div class="left">
+                                    <img src = 'assets/LL.png' alt = "me">
+                                    <p>Languages used: HTML5, CSS, JavaScript, Splide.js</p>
+                                </div>
+                                <div class="right">
+                                    <h2>Portfolio Website</h2>
+                                    <p id="projectDesc">Re-design my original portfolio website to allow future employers to view the websites I have created, as well as to get to know me a little bit more.</p>
+                                    <br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="con">
+                                <div class="left">
+                                    <img src="assets/nashua.png" alt="nashua">
+                                    <p>Languages Used: HTML5, CSS, JavaScript, PHP</p>
+                                </div>
+                                <div class="right">
+                                    <h2>Hometown Multi-Page Website</h2>
+                                    <p id="projectDesc">This website was created towards a class midterm in Website Development. The purpose of the site is to show off our hometowns, what we loved about our hometown, as well a form the people can fill out and retrieve the submissions via email.</p>
+                                    <br><br>
+                                    <a href = "https://people.rit.edu/nmr5651/iste240/midterm/"><p>Link to Website</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                new Splide( '.splide', {
+                    type: 'loop',
+                    perPage: 1,
+                    height: '65vh',
+                    width: '75vw',
+                } ).mount();
+            })
+        </script>
+
+        <script>
+            
+            const background = document.getElementById('header');
+            const section = document.getElementById('section');
+
+            window.addEventListener('scroll', () => {
+                let scroll = window.pageYOffset;
+                background.style.opacity = (1 - (scroll / 700));
+                section.style.opacity = (2 - (scroll / 800));
+            })
+            
+
+
+        </script>
+        <script src = 'js/splide-2.4.12/dist/js/splide.min.js'></script>
+    </body>
 </html>

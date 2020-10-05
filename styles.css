@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Righteous&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projectDesc{
+    font-family: "Montserrat", serif;
+}
+#projects{
+    font-size: 7rem;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+
+.title, #letter, h2 {
+    font-family: "Righteous", sans-serif;
+    font-size: 12rem;
+}
+
+.desc{
+    font-family: "Montserrat", serif;
+    width: 40%;
+    font-size: 2.1rem;
+    letter-spacing: -0.065em;
+    position: absolute;
+    left: 7vw;
+    bottom: 7vw;
+    text-align: justify;
+}
+
+.title{
+    margin-top: 0;
+    letter-spacing: 1rem;
+    color: #DBDBDB;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.web{
+    position: absolute;
+    top:0;
+    left: 14vw;
+}
+
+.developer{
+    position: absolute;
+    top: 12rem;
+    left: 6vw;
+}
+
+.developer, #letter{
+    font-size: 8rem;
+    z-index: 2;
+}
+
+#letter{
+    color: rgba(149, 61, 164, 0.5);
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('assets/BW_Background.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+section{
+    width: 100%;
+    background-color: #151515;
+}
+
+section .container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.content{
+    color: white;
+}
+
+.head{
+    font-family: "Righteous", sans-serif;
+    font-size: 8rem;
+}
+
+.aboutText{
+    font-family: "Montserrat", serif;
+    color: white;
+    text-align: justify;
+    font-size: 1.8rem;
+}
+
+#rotating{
+    transform-origin: center center;
+    animation: 45s rotate infinite linear;
+    height: 80%;
+}
+
+.contentImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}
+
+.splideContainer{
+    background-color: #E3E0E0;
+    width: 75rem;
+}
+
+.outer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+}
+
+.con{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.con .left img {
+    width: 40%;
+}
+
+.left, .right{
+    text-align: center;
+}
+
+.left p{
+    margin-top: 20%;
+}
+.right h2{
+    font-size: 3em;
+}
+.right:nth-child(even){
+    background-color: #c4c4c4;
+}
+
+#projectDesc, .right p{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#projectDesc, .right p{
+    padding: 1em;
+}
+
